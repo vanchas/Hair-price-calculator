@@ -22,6 +22,7 @@
 .hair-length-label {
 	display: block;
 	font-weight: 700;
+	color: #555;
 }
 #hair-input {
 	min-width: 20em;
@@ -35,6 +36,10 @@
 	outline: none;
 	-webkit-transition: 0.2s;
 	transition: opacity 0.2s;
+}
+.length-display {
+	display: block;
+	height: 1em;
 }
 #hair-input::before {
 	content: "";
@@ -89,6 +94,7 @@
 .hair-color-label {
 	padding: 2em 0 1em 0;
 	font-weight: 700;
+	color: #555;
 }
 .radio-group {
 	display: grid;
@@ -112,6 +118,7 @@
 	box-shadow: 2px 2px 5px 1px #ccc;
 	background-color: #fff;
 	font-size: 1.2em;
+	color: #555;
 }
 .radio-group label.active {
 	background-color: #ffedf0;
@@ -133,6 +140,7 @@
 	padding: 2em 0 0 0;
 	font-weight: 700;
 	font-size: 1.1em;
+	color: #555;
 }
 .hair-price {
 	font-size: 2.5em;

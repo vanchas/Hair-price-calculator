@@ -1,8 +1,9 @@
 const hairLengthInput = document.querySelector('#hair-input')
 const colorInputs = document.querySelectorAll('.color-input')
 const hairPriceNode = document.querySelector('.hair-price span')
+const lengthDisplay = document.querySelector('.length-display')
 let hairColor = ''
-let hairLength = ''
+let hairLength = 0
 let hairPrice = 0
 
 function removeChecked() {
@@ -67,7 +68,7 @@ colorInputs.forEach(
       rerenderValue()
     }))
 
-hairLengthInput.addEventListener('change', e => {
+hairLengthInput.addEventListener('input', e => {
   hairLength = e.target.value
   if (hairColor === '1') {
     brownHairCount()
@@ -81,5 +82,8 @@ hairLengthInput.addEventListener('change', e => {
 
 function rerenderValue() {
   hairPriceNode.innerHTML = hairPrice
+  if (hairLength > 0) {
+    lengthDisplay.innerHTML = hairLength + ' см'
+  }
 }
 rerenderValue()
