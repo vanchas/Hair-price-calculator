@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="./style/style.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <small>Волосы натуральные в срезах от 40 см. Не крашенные. Не седые.</small>
+    <h2>Узнайте сколько стоят <br> ваши волосы</h2>
+    <form>
+      <label for="hair-input" class="hair-length-label">ДЛИННА ВОЛОС</label>
+      <input type="range" id="hair-input" min="40" max="100" step="1">
+      <div class="hair-color-label">ЦВЕТ ВОЛОС</div>
+      <div class="radio-group">
+        <label>Русые
+          <input type="radio" value="1" name="color" class="color-input">
+        </label>
+        <label>Блонд
+          <input type="radio" value="2" name="color" class="color-input">
+        </label>
+        <label>Брюнет
+          <input type="radio" value="3" name="color" class="color-input">
+        </label>
+        <!-- <label>Рыжие
+          <input type="radio" value="4" name="color" class="color-input">
+        </label> -->
+      </div>
+      <div class="hair-price-label">СТОИМОСТЬ ВОЛОС</div>
+      <div class="hair-price">
+        ~ <span></span> грн
+      </div>
+    </form>
+    <small>Цена за 100 грамм.</small>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
