@@ -15,17 +15,17 @@
 <body>
   <div class="wrapper">
     <small>Волосы натуральные в срезах от 40 см. Не крашенные. Не седые.</small>
-    <h2>Узнайте сколько стоят <br> ваши волосы</h2>
+    <h2>Узнайте сколько стоят <br> Ваши волосы</h2>
     <form>
-      <label for="hair-input" class="hair-length-label">ДЛИННА ВОЛОС</label>
-      <input type="range" id="hair-input" min="40" max="100" step="1">
-      <span class="length-display"></span>
+      <label for="hair-input" class="hair-length-label">ДЛИНА ВОЛОС</label>
+      <input type="range" id="hair-input" min="40" max="70" step="1" value="0">
+      <span class="length-display">40 см</span>
       <div class="hair-color-label">ЦВЕТ ВОЛОС</div>
       <div class="radio-group">
         <label>Русые
           <input type="radio" value="1" name="color" class="color-input">
         </label>
-        <label>Блонд
+        <label id="blond">Блонд
           <input type="radio" value="2" name="color" class="color-input">
         </label>
         <label>Брюнет

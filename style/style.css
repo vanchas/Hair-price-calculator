@@ -14,6 +14,10 @@
 	letter-spacing: 1px;
 	padding: 1em 1em 1em 1em;
 	font-weight: 700;
+	user-select: none;
+}
+.wrapper small, div {
+	user-select: none;
 }
 .wrapper form {
 	max-width: 700px;
@@ -25,6 +29,7 @@
 	color: #555;
 }
 #hair-input {
+	cursor: pointer;
 	min-width: 20em;
 	max-width: 90vw;
 	position: relative;
@@ -110,6 +115,8 @@
 }
 
 .radio-group label {
+	cursor: pointer;
+	user-select: none;
 	border: 1px solid #ccc;
 	border-radius: 0.3em;
 	padding: 1em 0;
