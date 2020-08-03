@@ -4,7 +4,7 @@ const hairPriceNode = document.querySelector('.hair-price span')
 const lengthDisplay = document.querySelector('.length-display')
 const blondButton = document.querySelector('#blond')
 let hairColor = '2'
-let hairLength = 0
+let hairLength = 40
 let hairPrice = 3200
 
 blondButton.classList.add('active')
